@@ -1,4 +1,4 @@
-const Bxy = [ 
+export const Bxy = [ 
     [ 0, 60 ],
     [ 30, 0 ],
     [ 60, 60 ],
@@ -51,8 +51,8 @@ export function generateBasisData() {
         for (let t = 2; t <= 8; t += 0.01)
         {
             res.push({
-                x: t * -100 + 200,
-                y: RecurMetod(i, 3, t) * -100
+                x: t,
+                y: RecurMetod(i, 3, t)
             })
         }
     }
